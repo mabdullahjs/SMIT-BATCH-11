@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .head {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1 class="head">Hello world</h1>
+    <h1>Hello world</h1> -->
+    <h1>Register User</h1>
+    <form>
+        <fieldset>
+            <legend>User Information</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" placeholder="first-name" required minlength="3" maxlength="5"> <br /><br />
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" /> <br /><br />
+
+            <label for="email">Your email:</label>
+            <input type="email" id="email" /> <br /><br />
+
+            <label for="password">Your password:</label>
+            <input type="password" id="password" maxlength="10"/> <br /><br />
+
+            <label>Gender:</label>
+            <input checked type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="custom" name="gender">
+            <label for="custom">custom</label> <br><br>
+
+            <label for="hobbies">Hobbies:</label>
+            <label for="cricket">Cricket</label>
+            <input type="checkbox" id="cricket">
+            <label for="cooking">Cooking</label>
+            <input type="checkbox" id="cooking">
+            <label for="sleeping">Sleeping</label>
+            <input type="checkbox" id="sleeping"><br><br>
+
+            <label for="birth">Date of Birth</label>
+            <input type="date" id="birth"> <br><br>
+
+            <label for="province">province</label>
+            <select id="province">
+                <option value="sindh">Sindh</option>
+                <option value="balochistan">Balochistan</option>
+                <option selected value="KPK">KPK</option>
+                <option value="punjab">Punjab</option>
+            </select><br><br>
+
+            <label for="pic">profile picture</label>
+            <input type="file" id="pic"> <br><br>
+
+            <label for="description">description</label><br>
+            <textarea  id="description" cols="30" rows="5"></textarea><br><br>
+            <button type="submit">Register</button>
+        </fieldset>
+
+        <img src="./asset/back.png" alt="back-btn">
+
+
+    </form>
+</body>
+
+</html>
