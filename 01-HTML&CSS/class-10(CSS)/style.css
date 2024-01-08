@@ -1,0 +1,12 @@
+*{
+    color: blue;
+}
+h1, p{
+    color: red;
+}
+.head{
+    color: yellow;
+}
+#head-one{
+    color: magenta;
+}

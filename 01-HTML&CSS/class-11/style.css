@@ -1,0 +1,19 @@
+/* ul li{
+    color: blue;
+} */
+
+/* div p{
+    color: red;
+}
+ #hello+h2{
+    color: yellowgreen;
+} 
+#hello~h2{
+    color: yellowgreen;
+} */
+
+
+#hello{
+    background-color: #ff0000;
+    opacity: 0.9
+}
