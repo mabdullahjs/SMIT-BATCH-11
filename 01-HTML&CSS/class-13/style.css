@@ -1,0 +1,43 @@
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: lightgray;
+    margin: 100px auto;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+.red{
+    background-color: red;
+    /* position: relative;
+    top: 40px; */
+    /* left: -30px; */
+    position: sticky;
+    top: 40px;
+    right: 50px;
+    
+}
+.green{
+    background-color: green;
+    /* position: absolute;
+    bottom: 30px;
+    right: 50px; */
+}
+.blue{
+    background-color: blue;
+    /* position: fixed;
+    top: 30px; */
+}
+.orange{
+    background-color: orange;
+   
+}
+/* .max-height{
+    height: 200vh;
+} */
+
+img{
+    float: right;
+}

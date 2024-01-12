@@ -1,0 +1,51 @@
+button {
+    background-color: aqua;
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #53ffff;
+    color: black;
+}
+
+ul {
+    /* list-style-type: decimal-leading-zero; */
+    /* list-style-image:  url("https://images.unsplash.com/photo-1682687980918-3c2149a8f110?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"); */
+
+    /* list-style-position: outside; */
+    /* list-style: inside circle; */
+
+}
+
+table {
+    border: 1px solid black;
+    width: 100px;
+    padding: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    /* background-color: rgb(255, 213, 220); */
+    background-color: palegreen;
+    color: black;
+    empty-cells: show;
+    border-spacing: 50px;
+}
+
+/* table:hover{
+background-image: url('https://images.unsplash.com/photo-1682687980918-3c2149a8f110?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8');
+} */
+
+td,
+th {
+    border: 1px solid black;
+    padding: 50px;
+}
+
+input:focus {
+    background-color: red;
+    color: white;
+    border: 1px solid #b1e1e4;
+}
