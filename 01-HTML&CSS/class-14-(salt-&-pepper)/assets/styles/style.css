@@ -1,0 +1,11 @@
+/* color variable */
+
+:root{
+    --red:#f42625;
+    --white:#ffffff;
+    --black:#000000;
+}
+
+#head{
+    background-color: var(--red);
+}
