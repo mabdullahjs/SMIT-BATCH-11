@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* utility classes */
@@ -77,6 +79,38 @@
 
 /* margin classes end */
 
+.bg-light{
+    background-color: #ffffff;
+}
+.bg-dark{
+    background-color: #000000;
+}
+.bg-grey{
+    background-color: #0f0f0f;
+}
+
 .center{
     text-align: center;
+}
+.rounded{
+    border-radius: 30px;
+}
+.rounded-sm{
+    border-radius: 10px;
+}
+.rounded-md{
+    border-radius: 20px;
+}
+.text-dark{
+    color: #000000;
+}
+.text-light{
+    color: #ffffff;
+}
+.text-grey{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.transparent{
+    background-color: transparent;
 }

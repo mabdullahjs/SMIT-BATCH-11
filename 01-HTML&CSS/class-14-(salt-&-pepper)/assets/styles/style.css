@@ -6,6 +6,39 @@
     --black:#000000;
 }
 
-#head{
+/* navbar styling */
+#navbar-items{
+    gap: 30px;
+}
+#navbar{
+    padding: 0px 10px;
+}
+
+#main-logo{
+    width: 165px;
+}
+.nav-link{
+    text-decoration: none;
+}
+#franchise{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+#order-online{
     background-color: var(--red);
+    border: 0px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+#red{
+    color: var(--red);
+}
+#btn-icon{
+    padding: 5px 7px; 
+}
+
+#children-images{
+    gap: 30px;
 }
