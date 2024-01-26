@@ -1,0 +1,41 @@
+body{
+    background-color: #2c2e54;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.container{
+    /* border: 2px solid black; */
+    padding: 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4 , 1fr);
+}
+.box{
+    /* border: 1px solid blueviolet; */
+    padding: 30px;
+}
+.green{
+    background-color: #61be5b;
+}
+.red{
+    background-color: #f33937;
+}
+.yellow{
+    background-color: #feb342;
+}
+
+
+#box-2{
+    grid-column: 2 / 4;
+}
+
+#box-1{
+    grid-row: 1 / 4;
+}
+
+#box-6{
+    grid-column: 4 / 5;
+    grid-row: 2 / 4;
+}
