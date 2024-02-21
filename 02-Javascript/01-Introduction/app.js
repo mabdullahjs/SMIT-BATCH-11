@@ -1,33 +1,17 @@
-// var a = 10;
-// var b = 20;
+// alert("Hello world");
 
-// console.log(b);
-
-// var myFirstName = 20;
-// var lastName = 2;
-
-
-// Data types
-
-
-// string
-// Number
-// Boolean
-
-
-// var firstName = "Muhammad Abdullah"; 
-// var age = 20;
-// var isUser = 'false'
-
-// typeof()
+// Alert()
 // alert()
 
+// alert("hello world");
 
+// console.log("Hello world");
 
-// console.log(firstName);
-// console.log(age);
-// console.log(isUser);
+//string "asdljkads3423423 true"
+//number 12345254
+//boolean true || false
 
+//object
 
 
 
@@ -49,89 +33,53 @@
 
 
 
+// var $_userName123 = "abdullah";
+// console.log(userName);
 
 
 
 
-
-
-
-
-
-// var firstName = "Muhammad"; 
-// var lastName = "Abdullah"
-// var age = 20;
-// var isUser = false
-
-
-// // console.log(typeof(isUser))
-// // console.log(firstName , age , isUser);
-
-
-// console.log("My name is " + firstName + " and my age is " + age)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var firstName = "Muhammad";
-// var lastName = "Abdullah"
-// var age = 20;
-
-// console.log('My name is ' + firstName + " " + lastName + ' and my age is ' + age);
-
-
-// var firstName = 'abdullah'
-// alert('Hello how are you?' + firstName);
-
-
-// var alert = prompt('Enter your name?');
+// var userName = "abdullah";
 // console.log(userName);
 
 
 
 
 
+// var firstName = "abdullah";
+// var lastName = "khan";
+// var age = 20;
+// var isAvailable = true;
+// concatinate
+// console.log(typeof(isAvailable));
+// console.log(firstName + " " + lastName);
+// console.log(12 + 12);
 
-// alert Assingment
-
-// question 1
-
-// alert('hello world');
 
 
 
-//question 2
 
-// alert('error message')
+
+
+
+
+
+
+// var firstName = 'Muhammad';
+// var lastName = 'Abdullah';
+// var age = 20;
+
+// console.log('my name is ' + firstName + " " + lastName + ' and my age is ' + age);
+
+
+
+
+
+
+
+
+
+
 
 
 
