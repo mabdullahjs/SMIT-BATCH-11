@@ -112,7 +112,9 @@
 //|| == OR
 
 
-
+// var comparision = 10 <= 10 || 10 < 6 || 10 > 15;
+var comparision = 10 <= 10 && 10 < 6 && 10 > 15;
+console.log(comparision);
 
 
 
