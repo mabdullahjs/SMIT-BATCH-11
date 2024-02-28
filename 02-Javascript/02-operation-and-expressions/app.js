@@ -113,13 +113,75 @@
 
 
 // var comparision = 10 <= 10 || 10 < 6 || 10 > 15;
-var comparision = 10 <= 10 && 10 < 6 && 10 > 15;
-console.log(comparision);
+// var comparision = 10 <= 10 && 10 < 6 && 10 > 15;
+// console.log(comparision);
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// num++ post increment
+// ++num pre increment 
+// var num = 10;
+// console.log(num + 1);
+// console.log(++num);
+// console.log(num++);
+// console.log(num++)
+// console.log(++num)
+
+
+
+
+
+// var num = 10
+// var calculation = ++num + num++ + ++num;
+// 11 + 11 + 13
+// var calculation = ++num + num++ + ++num + --num + num-- + num++ + ++num;
+// //11 + 11 + 13 + 12 + 12 + 11 + 13;
+
+
+// console.log(calculation , 11 + 11 + 13 + 12 + 12 + 11 + 13);
+
+
+
+
+
+
+
+
+
+
+
+
+
+var num = 2;
+if(num % 2 === 0){
+    console.log('number is divisible by 2');
+}else{
+    console.log('number is not divisible by 2');
+}
 
 
 
