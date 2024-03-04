@@ -230,6 +230,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 var head = document.querySelector('.head');
 var paragraph = document.querySelector("#para");
 console.log(paragraph.innerHTML)
