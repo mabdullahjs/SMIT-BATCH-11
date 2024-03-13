@@ -305,8 +305,6 @@ function getFruits(){
         console.log('fruit available nahi ha');
         h2.innerHTML = `${input.value} is not available`
     }
-
-
     input.value = ''
 }
 
