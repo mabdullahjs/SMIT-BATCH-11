@@ -145,14 +145,110 @@
 
 
 
-let fruits = ['apple' , 'banana' , 'orange' , 'watermelon' , 'grapes'];
+// let fruits = ['apple' , 'banana' , 'orange' , 'watermelon' , 'grapes'];
 
-console.log(fruits);
-const ul = document.querySelector('ul');
-for (let i = 0; i < fruits.length; i++) {
-    // console.log(fruits[i]);
-    ul.innerHTML += `<li>${fruits[i]}</li>`
-}
+// console.log(fruits);
+// const ul = document.querySelector('ul');
+// for (let i = 0; i < fruits.length; i++) {
+//     // console.log(fruits[i]);
+//     ul.innerHTML += `<li>${fruits[i]}</li>`
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const fruits = [
+//     "apple",
+//     "banana",
+//     "orange",
+//     "grape",
+//     "strawberry",
+//     "kiwi",
+//     "watermelon",
+//     "pineapple",
+//     "mango",
+//     "pear",
+//     "peach",
+//     "plum",
+//     "blueberry",
+//     "raspberry",
+//     "cherry",
+//     "lemon",
+//     "lime",
+//     "apricot",
+//     "pomegranate",
+//     "coconut"
+// ];
+// // console.log(fruits);
+// const ol = document.querySelector('ol');
+// function renderFruits() {
+//     ol.innerHTML = ''
+//     for (let i = 0; i < fruits.length; i++) {
+//         // console.log(fruits[i] , i);
+//         ol.innerHTML += `<li>${fruits[i]}</li>`
+//     }
+// }
+
+
+
+
+
+
+
+
+//infinite loops
+
+// let i = 1;
+// while(i > 0){
+//     console.log(i);
+//     i++
+// }
+
+
+
+
+
+
+//while loop
+// let j = 11;
+// while (j < 10) {
+//     console.log('while loop ===>', j);
+//     j++
+// }
+
+
+//do while loop
+// let i = 11;
+// do {
+//     console.log('do while loop ===>', i)
+//     i++
+// } while (i < 10)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
