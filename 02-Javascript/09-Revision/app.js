@@ -22,9 +22,7 @@
 //         </div>
 //         `
 //     }
-// }  
-
-
+// }
 
 // function deleteTodo(index){
 //     console.log('todo deleted' , index);
@@ -33,30 +31,17 @@
 //     console.log('todo edited' , index);
 // }
 
-
-
-
-
-
-
-
-
-
 //string
 //number
 //boolean
 
 //object
 
-
 // let username = 'abdullah';
 // const age = 20;
 
-
-
 // console.log('2' + '2');
 // console.log(`my name is ${username} and my age is ${age}`);
-
 
 // const age = 17;
 // if(age < 18 || age > 20){
@@ -69,35 +54,9 @@
 //     console.log('else block');
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // const h1 = document.querySelector('#head');
 // h1.innerHTML = 'changed through javascript'
 // console.log(h1.innerHTML);
-
-
-
-
-
-
-
-
 
 // let username = "haseeb"
 // for(let i = 0; i < 10; i++){
@@ -114,15 +73,6 @@
 //     ul.innerHTML += `<li>5 * ${i} = ${5*i}</li>`
 // }
 
-
-
-
-
-
-
-
-
-
 // let num = 10;
 // for (let i = num; i >= 1; i--) {
 //     let str = '';
@@ -131,18 +81,6 @@
 //     }
 //     console.log(str);
 // }
-
-
-
-
-
-
-
-
-
-
-
-
 
 // let num = 10;
 // let str = ''
@@ -155,43 +93,3 @@
 //     str += '*';
 //     console.log(str);
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
