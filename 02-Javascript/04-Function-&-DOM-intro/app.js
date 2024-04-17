@@ -243,20 +243,60 @@
 
 
 
-var head = document.querySelector('.head');
-var paragraph = document.querySelector("#para");
-console.log(paragraph.innerHTML)
+// var head = document.querySelector('.head');
+// var paragraph = document.querySelector("#para");
+// console.log(paragraph.innerHTML)
 
-function changeText(){
+// function changeText(){
 
-    if(paragraph.innerHTML === 'changed through js' && head.innerHTML === 'changed through js'){
-        paragraph.innerHTML = 'lorem ipsum';
-        head.innerHTML = 'hello world'
-    }else{
-        paragraph.innerHTML = 'changed through js'
-        head.innerHTML = 'changed through js'
-    }
+//     if(paragraph.innerHTML === 'changed through js' && head.innerHTML === 'changed through js'){
+//         paragraph.innerHTML = 'lorem ipsum';
+//         head.innerHTML = 'hello world'
+//     }else{
+//         paragraph.innerHTML = 'changed through js'
+//         head.innerHTML = 'changed through js'
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function greetUser (username , age){
+//     console.log(`my name is ${username} and my age is ${age}`);
+//     return `my name is ${username} and my age is ${age}`
+// }
+
+// const func = greetUser('abdullah' , 20);
+// console.log(func)
+
+
+
+
+
+
+
+const para = document.querySelector('.para');
+
+
+function greetUser (){
+    console.log('hello abdullah');
+    para.innerHTML = 'change through javascript'
 }
+
+
+
 
 
 

@@ -265,3 +265,73 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for (let i = 1; i <= 100; i++){
+//     // console.log(`5 * ${i} = ${5*i}`);
+//     console.log('bhar wala loop' , i);
+//     for(let j = 0; j <=10; j++){
+//         // console.log('under wala loop ' , j)
+//         console.log(`${i} * ${j} = ${i * j}`);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

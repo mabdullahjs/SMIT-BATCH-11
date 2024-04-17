@@ -293,22 +293,81 @@
 
 
 
-const shop = ['Apple', 'Banana',  'Orange', 'Mango', 'Grape', 'Strawberry'];
-const input = document.querySelector('#input');
-const h2 = document.querySelector('h2');
-function getFruits(){
-    console.log(input.value)
-    if(shop.includes(input.value)){
-        console.log('fruit available haa..')
-        h2.innerHTML = `${input.value} is available`
-    }else{
-        console.log('fruit available nahi ha');
-        h2.innerHTML = `${input.value} is not available`
-    }
-    input.value = ''
-}
+// const shop = ['Apple', 'Banana',  'Orange', 'Mango', 'Grape', 'Strawberry'];
+// const input = document.querySelector('#input');
+// const h2 = document.querySelector('h2');
+// function getFruits(){
+//     console.log(input.value)
+//     if(shop.includes(input.value)){
+//         console.log('fruit available haa..')
+//         h2.innerHTML = `${input.value} is available`
+//     }else{
+//         console.log('fruit available nahi ha');
+//         h2.innerHTML = `${input.value} is not available`
+//     }
+//     input.value = ''
+// }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const fruits = ['watermelon' , 'apple' , 'banana' , 'orange' , ['nested array' , [true , [false]]] , true , 20];
+
+// console.log(fruits[4][1][1][0]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const fruits = ['apple' , 'banana' , 'orange' , 'watermelon'];
+
+// fruits.push('add')
+// fruits.splice(2 , 1 , 'nashpati' , 'melon')
+// fruits.splice(3 , 1);
+// fruits.splice(1 , 1);
+// slice
+// console.log(fruits)
 
 
 
