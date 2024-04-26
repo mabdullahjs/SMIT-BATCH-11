@@ -7,6 +7,17 @@
 </head>
 <body>
     <h1>Date and time</h1>
+    <h1>
+        <span id="hour">0</span>:
+        <span id="minute">0</span>:
+        <span id="second">0</span>
+    </h1>
+    <button id="startBtn" onclick="startWatch()">Start</button>
+    <button onclick="stopWatch()">Stop</button>
+    <button onclick="resetWatch()">Reset</button>
+
+    <input type="date" id="date">
+    <button onclick="getDateFromInput()">click</button>
 
     <script src="app.js"></script>
     
