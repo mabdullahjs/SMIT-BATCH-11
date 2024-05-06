@@ -400,7 +400,7 @@
 
 // console.log(users);
 
-const div = document.querySelector('#users');
+// const div = document.querySelector('#users');
 
 // for (let i = 0; i < users.length; i++) {
 //     console.log(users[i]);
@@ -569,6 +569,66 @@ const products = [
 ];
 
 console.log(products);
+const div = document.querySelector('#products');
+
+for (let i = 0; i < products.length; i++) {
+    console.log(products[i])
+    div.innerHTML += `
+    <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">${products[i].name}</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">${products[i].price}</h6>
+    <p class="card-text">${products[i].description}</p>
+    <a href="#" class="card-link">Add To Cart</a>
+  </div>
+</div>
+    `
+
+}
+
+
+
+
+// const user = {
+//     username: 'Muhammad Abdullah',
+//     email: 'mabdullah@gmail.com',
+//     age: 20,
+//     isLoggedIn: true,
+//     hobbies: ['cricket', 'swimming', 'gym'],
+//     isAllowed: function () {
+//         console.log(user.age)
+//         // if (user.age >= 18) {
+//         //     // console.log('user allowed')
+//         //     console.log(this)
+//         // } else {
+//         //     console.log('maalik shaart hojaa!')
+//         // }
+//     }
+// }
+
+// user.username = 'usman';
+// delete user.age;
+// user.abc = 'abc'
+// console.log(user)
+
+// user.isAllowed()
+
+// console.log(this);
+// window.location = ''
+
+
+// const age = 16;
+
+// function changeLocation(element) {
+//     console.log(element.innerHTML)
+//     element.innerHTML = 'CHANGED'
+//     // if(age >= 18){
+//     //     console.log('about pa jaskta ho');
+//     //     window.location = 'about.html';
+//     // }else{
+//     //     console.log('nahi jaskta');
+//     // }
+// }
 
 
 
@@ -581,6 +641,67 @@ console.log(products);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let plan1 = {
+//     name: "Basic",
+//     price: 3.99,
+//     space: 100,
+//     transfer: 1000,
+//     pages: 10
+// };
+
+// function createPlan(name, price, space, transfer, pages) {
+//     this.name = name;
+//     this.price = price;
+//     this.space = space;
+//     this.transfer = transfer;
+//     this.pages = pages
+
+// }
+
+// const newPlan = new createPlan('basic' , 200 , 40 , 1000 , 10);
+// console.log(newPlan)
+
+// const names = document.querySelector('#name');
+// const transfer = document.querySelector('#transfer');
+// const space = document.querySelector('#space');
+// const price = document.querySelector('#price');
+// const page = document.querySelector('#page');
+
+// function createPlans() {
+//     const obj = {
+//         name:names.value,
+//         price: price.value,
+//         space: space.value,
+//         transfer: transfer.value,
+//         pages: page.value
+//     }
+//     // const newObj = new createPlan(names.value, price.value, space.value, transfer.value, page.value)
+//     console.log(obj)
+// }
 
 
 
