@@ -122,13 +122,46 @@
 // }
 
 
+// let dayOfWk = 'Mon';
+
+// if (dayOfWk === "Sat" || dayOfWk === "Sun") {
+//     console.log("chutti manao!");
+// }
+// else if (dayOfWk === "Fri") {
+//     console.log("Akhri din ha kaam ka!");
+// }
+// else {
+//     console.log("zindagi jhund!");
+// }
+
+
+// let dayOfWk = 'Sat';
+
+// switch (dayOfWk) {
+//     case "Sun":
+//         console.log('chutti manao!');
+//         break
+//     case "Sat":
+//         console.log('chutti manao!');
+//         break
+//     default:
+//         console.log('else');
+// }
 
 
 
 
 
 
+// let grade = 'A';
 
+// if (grade === 'A') {
+//     console.log('maalik acha marks ay hain!')
+// } else if (grade === 'B') {
+//     console.log('pass hogaya hon!');
+// } else {
+//     console.log('parhai likhai ma kuch nahi rkha akharat ki tyaari kro!')
+// }
 
 
 

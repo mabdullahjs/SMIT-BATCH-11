@@ -66,7 +66,13 @@ const phones = [
 
 ]
 
-const arr = [];
+let arr;
+let items = JSON.parse(localStorage.getItem('cartItems'));
+if(items === null){
+    arr = [];
+}else{
+    arr = items;
+}
 
 const div = document.querySelector('.products');
 function renderItems (){
@@ -97,5 +103,6 @@ function addtocart(index){
 
 function gotocart(){
     console.log('cart');
+    localStorage.setItem('cartItems' , JSON.stringify(arr));
     window.location = 'cart.html';
 }
