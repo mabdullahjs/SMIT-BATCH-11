@@ -72,6 +72,7 @@ if(items === null){
     arr = [];
 }else{
     arr = items;
+    console.log(arr)
 }
 
 const div = document.querySelector('.products');
@@ -93,6 +94,7 @@ renderItems()
 
 function addtocart(index){
     if(arr.includes(phones[index])){
+        console.log('item included');
         phones[index].quantity += 1;
     }else{
         phones[index].quantity = 1;

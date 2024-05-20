@@ -137,6 +137,106 @@ function resetWatch() {
 
 
 
+// const date = new Date();
+// console.log(typeof(date));
+
+
+// const arr = [];
+// arr[5] = 'ten';
+// console.log(arr[4]);
+
+
+
+
+// function hello(username){
+//     console.log(username)
+// }
+
+// console.log(hello('abdullah')); //undefined
+
+
+
+
+
+
+
+// for(let i = 10; i > 0; i--){
+//     console.log(i)
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let a = 10; //global variable
+
+// function hello(){
+//     let b = 10 //local variable
+//     console.log(a)
+// }
+// console.log(b); //error
+// hello()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const city = prompt('enter city name');
+// if(city === 'karachi'){
+//     console.log('you live in the safest city')
+// }else{
+//     console.log('bekaar city');
+// }
+
+
+
+
+const inputdedauser = prompt('input daa shahbash!')
+const date = new Date();
+console.log(date);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
