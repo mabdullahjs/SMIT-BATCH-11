@@ -300,6 +300,8 @@ const div = document.querySelector('div');
 
 //callback function wo function hota ha jo ma kisi bhi function ka as an argument bhejdeta krdeta ho
 
+// wo function jo apna under as an argument aik callback leta ha us function ko higher order function kehta hain!
+
 // arr.forEach(function (item){
 //     console.log(item)
 // })
@@ -634,6 +636,47 @@ const products = [
 // const electronics = products.filter(item => item.category === 'Electronics').filter(item => item.price > 100).filter(item => item.price < 200)
 
 // console.log(electronics);
+
+
+
+
+
+
+
+
+//callback function
+// higher order function
+
+// products.map(function (item){
+//     console.log(item)
+// })
+
+
+//reduce
+
+// const num = [1, 2, 3, 4, 5 , 5 ,5];
+// const shallowCopy = num.slice(3);
+// console.log(shallowCopy);
+
+// const sum = num.reduce((accumulator , initialvalue)=>{
+//     return  accumulator + initialvalue
+// } , 0)
+
+// console.log(sum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
