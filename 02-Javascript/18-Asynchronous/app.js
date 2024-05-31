@@ -47,6 +47,208 @@
 // Application programming interface
 
 
+//const data = 'data mangwalo..'
+//console.log(data);
+//settimeout(data)
+
+//promises ===> jab data ajaye to console krwadena
+
+
+
+
+
+
+
+
+
+
+//fetch().then().catch()
+// const bankBalance = 200000
+// const shaadi = new Promise((resolve , reject)=>{
+//     if(bankBalance > 100000){
+//         console.log('shaadi mubarak');
+//         resolve()
+//     }else{
+//         console.log('nalla bheto');
+//         reject()
+//     }
+// })
+
+// shaadi
+// .then(()=>{
+//     console.log('succesfull')
+// })
+// .catch(()=>{
+//     console.log('rejected');
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const marks = 60
+
+// const result = new Promise((resolve , reject)=>{
+//     setTimeout(()=>{
+//         if(marks > 80){
+//             // console.log('you are passed');
+//             resolve('you are passed')
+//         }else{
+//             // console.log('you are failed');
+//             reject('you are failed')
+//         }
+//     } , 1000)
+
+// })
+// result
+// .then((res)=>{
+//     console.log(res);
+// })
+// .catch((err)=>{
+//     console.log(err);
+// })
+
+
+
+
+
+
+
+// function shaadiScnz (bankBalance){
+//     return new Promise((resolve , reject)=>{
+//         setTimeout(()=>{
+//             if(bankBalance > 100000){
+//                 console.log('shaadi Mubarak...');
+//                 resolve('shaadi Mubarak...')
+//             }else{
+//                 console.log('ammi na zehr kahlia...');
+//                 reject('!shaadi Mubarak...')
+//             }
+//         } , 1000)
+//     })
+// }
+
+// shaadiScnz(200000)
+// .then((res)=>{
+//     console.log(res);
+// })
+// .catch((err)=>{
+//     console.log(err);
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//fetch 
+//axios
+
+
+// fetch(`https://jsonplaceholder.typicode.com/users`)
+// .then((res)=>{
+//     return res.json()
+// }).then((res)=>{
+//     console.log(res);
+// }).catch((err)=>{
+//     console.log(err);
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const div = document.querySelector('div');
+
+// axios('https://fakestoreapi.com/products')
+// .then((res)=>{
+//     console.log(res.data)
+//     res.data.map((item)=>{
+//         div.innerHTML += `
+//         <h1>Title: ${item.title}</h1>
+//         <img width="300" src="${item.image}" alt="product-image"/>
+//         <h1>Price: ${item.price}</h1>
+//         <hr/>
+//         `
+//     })
+// }).catch((err)=>{
+//     console.log(err);
+// })
+
+
+
+// .then().catch()
+// async await
+
+
+
+
+try{
+    // alert('hello world');
+}catch(err){
+    console.error(err);
+}
+
+console.log('console after alert');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
