@@ -10,11 +10,8 @@
 
 // let data = undefined;data leka daaa
 
-
-
 //synchronous
 //asynchronous
-
 
 // console.log('hello world 1'); s
 // console.log('hello world 2'); s
@@ -23,14 +20,6 @@
 //     console.log('hello world 4'); as
 // } , 0)
 // console.log('hello world 5'); s
-
-
-
-
-
-
-
-
 
 // asynchronous
 
@@ -41,26 +30,15 @@
 //axios
 //fetch
 
-
 //API
 
 // Application programming interface
-
 
 //const data = 'data mangwalo..'
 //console.log(data);
 //settimeout(data)
 
 //promises ===> jab data ajaye to console krwadena
-
-
-
-
-
-
-
-
-
 
 //fetch().then().catch()
 // const bankBalance = 200000
@@ -81,18 +59,6 @@
 // .catch(()=>{
 //     console.log('rejected');
 // })
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const marks = 60
 
@@ -116,12 +82,6 @@
 //     console.log(err);
 // })
 
-
-
-
-
-
-
 // function shaadiScnz (bankBalance){
 //     return new Promise((resolve , reject)=>{
 //         setTimeout(()=>{
@@ -144,29 +104,8 @@
 //     console.log(err);
 // })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//fetch 
+//fetch
 //axios
-
 
 // fetch(`https://jsonplaceholder.typicode.com/users`)
 // .then((res)=>{
@@ -176,20 +115,6 @@
 // }).catch((err)=>{
 //     console.log(err);
 // })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const div = document.querySelector('div');
 
@@ -208,70 +133,45 @@
 //     console.log(err);
 // })
 
-
-
 // .then().catch()
 // async await
 
+// try{
+//     // alert('hello world');
+// }catch(err){
+//     console.error(err);
+// }
 
+// console.log('console after alert');
 
+// async function getData() {
+//   const res = await axios("https://fakestoreapi.com/products");
+//   console.log(res.data);
+// }
+// getData();
 
-try{
-    // alert('hello world');
-}catch(err){
-    console.error(err);
+// axios("https://fakestoreapi.com/products")
+//   .then((res) => {
+//     console.log(res.data);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+async function getData() {
+  try {
+    const res = await axios("https://fakestoreapi.com/products");
+    console.log(res.data);
+  } catch (error) {
+    console.error(error);
+  }
 }
 
-console.log('console after alert');
+getData();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// try {
+//   aler("hello world");
+// } catch (error) {
+//   console.error(error);
+// }
+// console.log("console after alert");
