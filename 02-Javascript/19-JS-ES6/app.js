@@ -1,10 +1,9 @@
 // Variable Scoping
 // Closure
-// Generators
 // Modules
 // Exponentiation Operator
 // Optional chaining
-// Object Methods (keys,values,freez,entries)
+// Object Methods (keys,values,freez,entries) 
 // Destructuring //p
 // Template literals //p
 // Destructuring //p
