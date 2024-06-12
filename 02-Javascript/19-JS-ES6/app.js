@@ -1,9 +1,10 @@
-// Variable Scoping
-// Closure
+// Variable Scoping // p
+// Closure //p
+// lexical scoping //p
 // Modules
-// Exponentiation Operator
-// Optional chaining
-// Object Methods (keys,values,freez,entries) 
+// Object Methods (keys,values,freez,entries)
+// Exponentiation Operator // p
+// Optional chaining //p
 // Destructuring //p
 // Template literals //p
 // Destructuring //p
@@ -91,3 +92,102 @@ const num = 220;
 //   age,
 // };
 // console.log(user);
+
+// Variable Scoping
+
+// var username = "abdullah";
+// var username = "usman";
+// username = "uzair";
+
+// let username2 = "abdullah";
+// username2 = "usman";
+
+// const username3 = "abdullah";
+
+// const username;
+
+// let user = "abdullah";
+// function username() {
+//   let usernames = "usman";
+//   console.log(user);
+// }
+// console.log(usernames);
+// username();
+
+// if (true) {
+//   const city = "karachi";
+// }
+// console.log(city);
+
+//lexical scope
+
+// function outerFunc() {
+//   let a = 10;
+//   function innerFunc() {
+//     let b = 20;
+//     console.log(a);
+//   }
+
+//   function innerFunc2() {
+//     console.log(a);
+//     console.log(b);
+//   }
+//   innerFunc();
+//   innerFunc2();
+// }
+// outerFunc();
+
+//closures
+
+// function outerFunc() {
+//   function innerFunc() {
+//     console.log("hello world!");
+//   }
+//   return innerFunc;
+// }
+
+// // const newFunc = outerFunc();
+// // newFunc();
+// console.log(outerFunc()());
+
+//Optional chaining
+
+// const user = {
+//   username: "abdullah",
+//   nestedUser: {
+//     fullname: "Muhammad Abdullah",
+//     nestedUser2: {
+//       lastname: "khan",
+//     },
+//   },
+// };
+
+// console.log(user.nestedUser?.nestedUser?.lastname);
+// [{}]
+
+// const nestedObject = {
+//   level1: {
+//     level2: {
+//       level3: {
+//         data: "I am deeply nested!",
+//       },
+//     },
+//   },
+// };
+// console.log(nestedObject?.level1?.level2?.level3?.data);
+
+// Exponentiation Operator
+
+console.log(2 ** 3);
+
+// Precedence
+console.log(2 + 3 ** 2); // ** isko zyada precedence milaigi
+console.log((2 + 3) ** 2);
+
+// event
+// api calling //https://www.youtube.com/watch?v=2EWVUZS6PKE
+// filter map //https://youtu.be/jqjHp1PHJu4?si=C-RMR-qZjSOYyQoF
+// promises
+//async await
+
+// local storage https://www.youtube.com/watch?v=Xf0hPx9VoVs
