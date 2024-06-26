@@ -1,7 +1,5 @@
 // Modules
 // Object Methods (keys,values,freez,entries)
-// Closure
-// lexical scoping
 // Destructuring
 // Rest parameter
 // Spread Operator
@@ -50,7 +48,7 @@
 
 // Array methods
 
-let fruits = ["Apple", "Banana", "Orange", "Grapes", "Strawberry"];
+// let fruits = ["Apple", "Banana", "Orange", "Grapes", "Strawberry"];
 
 // for (let i = 0; i < fruits.length; i++) {
 //   console.log(fruits[i]);
@@ -345,12 +343,95 @@ const div = document.querySelector("div");
 //     console.log(err);
 //   });
 
-async function getData() {
-  try {
-    const res = await axios("https://jsonplaceholder.typicode.com/users");
-    console.log(res.data);
-  } catch (error) {
-    console.log(error);
-  }
-}
-getData();
+// async function getData() {
+//   try {
+//     const res = await axios("https://jsonplaceholder.typicode.com/users");
+//     console.log(res.data);
+//     res.data.map((item) => {
+//       div.innerHTML += `<div style="border: 1px solid black; margin: 20px; padding: 20px; cursor: pointer;" onclick="deleteItem(this)">
+//       <h1>Name: ${item.name}</h1>
+//       <h1>Email: ${item.email}</h1>
+//       <h1>Phone: ${item.phone}</h1>
+//       </div>`;
+//     });
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// getData();
+
+// function deleteItem(item) {
+//   item.parentNode.removeChild(item);
+// }
+
+//spread operator
+
+// const arr = [1, 2, 3, 4, 5, 6];
+// const arr2 = [44, 66, 77, 88];
+
+// const arr3 = [...arr2, ...arr];
+// console.log(arr3);
+
+// [
+//   [44, 66, 77, 88],
+//   [1, 2, 3, 4, 5, 6],
+// ];
+
+// let fruits = ["Apple", "Banana", "Orange", "Grapes", "Strawberry"];
+
+// const fruits2 = ["chaunsa", "langra", ...fruits];
+// // fruits.push("chaunsa");
+// console.log(fruits2);
+
+//rest operator
+
+// function users(...user) {
+//   console.log(user);
+// }
+
+// users("abdullah", "usman", "ammar", "affan");
+
+// function users(user = "usman") {
+//   console.log(user);
+// }
+
+// users();
+
+// destructuring
+
+// const obj = {
+//   username: "abdullah",
+//   email: "mabdullah@gmail.com",
+//   age: 22,
+//   hobbies: ["cricket", "swimming"],
+//   isLoggedIn: true,
+// };
+// const { username, email, age } = obj;
+
+// console.log(username);
+
+// let fruits = ["Apple", "Banana", "Orange", "Grapes", "Strawberry"];
+
+// let [, , , , f1] = fruits;
+// console.log(f1);
+
+// Object Methods (keys,values,freez,entries)
+
+// please render this object
+
+const obj = {
+  username: "abdullah",
+  email: "mabdullah@gmail.com",
+  age: 22,
+  hobbies: ["cricket", "swimming"],
+  isLoggedIn: true,
+};
+
+// Object.freeze(obj);
+// obj.addVal = "abc";
+// delete obj.username;
+// console.log(obj);
+
+// console.log(Object.keys(obj));
+// console.log(Object.values(obj));
+// console.log(Object.entries(obj));
