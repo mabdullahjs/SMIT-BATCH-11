@@ -86,3 +86,169 @@
 // user.lastName = "khan";
 
 // console.log(user);
+
+// let username = 'abdullah'
+// username = 20
+
+// let fruits:string[] = []
+
+// function hello (username:string , age:number){
+//     console.log('hello');
+//     return {}
+// }
+
+// type User = string;
+// let username: User = "abd";
+
+// type Obj = {
+//   username: string;
+//   age: number;
+//   email: string;
+//   lastname?: string
+// };
+
+// const obj: Obj = {
+//   username: "abd",
+//   age: 20,
+//   email: 'abc@gmail.com'
+// };
+
+// obj.lastname = 'khan'
+
+//-----Union Type-----//
+
+// type User = string | number;
+
+// let username: User = 1;
+
+// type Fruits = (string | number | boolean)[]
+
+// let fruits:Fruits = ['mango' , 'orange' , 20 , true]
+
+//-----Interfaces-----//
+
+// interface Obj  {
+//   username: string;
+//   age: number;
+//   email: string;
+//   lastname?: string;
+// };
+
+// const obj: Obj = {
+//   username: "abd",
+//   age: 20,
+//   email: 'abc@gmail.com'
+// };
+
+//-----Interfaces vs Type Aliases-----//
+
+// type User = {
+//     username: string;
+//     age: number;
+// }
+
+// type User = {     //wrong syntax
+//     lastname: string
+// }
+
+// interface User {
+//   username: string;
+//   age: number;
+// }
+
+// interface User {
+//   lastname: string;
+// }
+
+// const user: User = {
+//   username: "abc",
+//   age: 20,
+//   lastname: "khan",
+// };
+
+// interface Fruit {
+//   fruitName: string;
+//   price: number;
+//   state: string;
+// }
+
+// interface Mango extends Fruit {
+//   type: string;
+// }
+
+// let fruit: Fruit = {
+//   fruitName: "cherry",
+//   price: 1000,
+//   state: "KPK",
+// };
+
+// let mango: Mango = {
+//   fruitName: "mango",
+//   price: 3000,
+//   state: "sindh",
+//   type: "sindhri",
+// };
+
+// type Fruit = {
+//   fruitName: string;
+//   price: number;
+//   state: string;
+// };
+
+// type Mango = Fruit & {
+//   type: string;
+// };
+
+// let fruit: Fruit = {
+//   fruitName: "cherry",
+//   price: 1000,
+//   state: "KPK",
+// };
+
+// let mango: Mango = {
+//   fruitName: "mango",
+//   price: 3000,
+//   state: "sindh",
+//   type: "sindhri",
+// };
+
+//-----Enums-----//
+
+// enum CardinalDirections {
+//   North,
+//   East,
+//   South,
+//   West,
+// }
+// let currentDirection = CardinalDirections.North;
+// console.log(currentDirection);
+
+// enum User {
+//   admin = "admin",
+//   user = "user",
+// }
+
+// console.log(User.admin);
+
+// enum StatusCodes {
+//   NotFound = 404,
+//   Success = 200,
+//   Accepted = 202,
+//   BadRequest = 400,
+// }
+
+// StatusCodes.NotFound;
+
+//-----Generics-----//
+
+// function identity<T>(arg: T): T {
+//   return arg;
+// }
+
+// console.log(identity('abd'));
+
+// function identity(arg: any): any {
+//   return [arg];
+// }
+
+// console.log(identity("abd"));
