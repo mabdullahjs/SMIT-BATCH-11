@@ -5,11 +5,11 @@
 - [x] HTML
 - [x] CSS
 - [x] bootstrap/tailwind
-- [ ] JAVASCRIPT
-- [ ] TYPESCRIPT
-- [ ] PWA
-- [ ] GITHUB/GIT
+- [x] JAVASCRIPT
+- [x] TYPESCRIPT
+- [x] GITHUB/GIT
 - [ ] FIREBASE
+- [ ] PWA
 - [ ] JS HACKATHON
 - [ ] ReactJS
 - [ ] NextJS
