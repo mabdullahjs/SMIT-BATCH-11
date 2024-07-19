@@ -9,6 +9,7 @@
 // Enums
 // Tuples
 // Type Guards
+// type casting
 
 //-----Type Annotations-----//
 
@@ -252,3 +253,23 @@
 // }
 
 // console.log(identity("abd"));
+
+// Tuples
+
+// let ourTuple: [number, boolean, string];
+
+// ourTuple = [12, true, "sn"];
+
+// type fruit = [string, number];
+
+// let fruits: fruit = ["mango", 200];
+
+// Type Guards
+
+// function hello(str: string | number) {
+//   if (typeof str === "string") {
+//     console.log(str.toLowerCase());
+//   }
+// }
+// hello("BFSDJFBHDFB");
+// hello(324324);
