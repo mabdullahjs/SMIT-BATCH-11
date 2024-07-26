@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>authentication</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 70vh;
+        }
+        input{
+            width: 250px;
+            height: 30px;
+        }
+        a{
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register User</h1>
+
+    <form id="form">
+        <input type="email" placeholder="enter your email" id="email"> <br><br>
+        <input type="password" placeholder="enter your password" id="password"><br><br>
+        <button type="submit">register</button>
+        <a href="./login.html">Already a user?</a>
+    </form>
+
+    <script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+firebase project
+firebase config
+auhtentication config
+
+https://firebase.google.com/docs/auth/web/start#web
+
+https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js
