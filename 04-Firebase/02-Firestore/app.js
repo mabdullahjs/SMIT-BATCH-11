@@ -6,6 +6,9 @@ import {
   deleteDoc,
   updateDoc,
   Timestamp,
+  query,
+  where,
+  orderBy,
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 import { db } from "./config.js";
 
@@ -13,11 +16,40 @@ const form = document.querySelector("#form");
 const todo = document.querySelector("#todo");
 const ul = document.querySelector("#ul");
 const select = document.querySelector("#select");
+const citiesBtn = document.querySelectorAll(".cities-btn");
+const reset = document.querySelector(".reset");
 
-const arr = [];
+//global array
+let arr = [];
 
+// single city query
+
+citiesBtn.forEach((btn) => {
+  btn.addEventListener("click", async (event) => {
+    arr = [];
+    console.log(event.target.innerHTML);
+    const todosRef = collection(db, "todos");
+    const q = query(
+      todosRef,
+      where("city", "==", event.target.innerHTML),
+      orderBy("time", "desc")
+    );
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach((doc) => {
+      arr.push({ ...doc.data(), id: doc.id });
+    });
+    console.log(arr);
+    renderTodo();
+  });
+});
+
+reset.addEventListener("click", getData);
+
+// get all data
 async function getData() {
-  const querySnapshot = await getDocs(collection(db, "todos"));
+  arr = [];
+  const q = query(collection(db, "todos"), orderBy("time", "desc"));
+  const querySnapshot = await getDocs(q);
   querySnapshot.forEach((doc) => {
     arr.push({ ...doc.data(), id: doc.id });
   });
@@ -27,6 +59,7 @@ async function getData() {
 
 getData();
 
+// render data on screen
 function renderTodo() {
   ul.innerHTML = "";
   if (arr.length === 0) {
@@ -39,6 +72,8 @@ function renderTodo() {
         <button class="deleteBtn">Delete</button>
         <button class="editBtn">Edit</button>
         </li>
+        <p>${item.time ? item.time.toDate() : "no time"}</p>
+        <hr/>
         `;
   });
 
@@ -68,6 +103,7 @@ function renderTodo() {
   });
 }
 
+// add todo in database
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
