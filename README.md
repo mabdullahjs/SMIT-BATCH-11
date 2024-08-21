@@ -8,9 +8,8 @@
 - [x] JAVASCRIPT
 - [x] TYPESCRIPT
 - [x] GITHUB/GIT
-- [ ] FIREBASE
-- [ ] PWA
-- [ ] JS HACKATHON
+- [x] FIREBASE
+- [x] JS HACKATHON
 - [ ] ReactJS
 - [ ] NextJS
 - [ ] nodejs expressjs
