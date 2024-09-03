@@ -1,0 +1,12 @@
+.card{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.btn{
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 10px;
+}
