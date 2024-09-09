@@ -6,6 +6,8 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
 import Services from './pages/Services.jsx'
+import SingleStudent from './pages/SingleStudent.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // protected route
 // dynamic route
@@ -45,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "service",
         element: <Services />
+      },
+      {
+        path: "singleStudent/:id",
+        element: <SingleStudent/>
       },
       {
         path: "*",
