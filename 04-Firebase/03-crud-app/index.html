@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
+  <!-- navbar started -->
+  <div class="navbar bg-primary text-white">
     
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl">daisyUI</a>
+    </div>
+      <div class="dropdown dropdown-end" id="user-avatar">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img
+              alt="Tailwind CSS Navbar component"
+              id="userImage"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNa1JGLFIadWHMQ0KvIuKWYGl-cxLwGlI2WA&s" />
+          </div>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-[#000000]">
+          <li>
+            <a class="justify-between" href="./postad.html">
+              Post ad
+            </a>
+          </li>
+          <li id="logout-user"><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- navbar ended -->
+  <section class="bg-[#FFF6F6] ml-5 mr-5 mt-5 mb-11">
+    <div class="round-lg">
+      <form class="w-[80%] mx-auto p-[30px]">
+        <label for="default-search"
+          class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+        <div class="relative">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+            </svg>
+          </div>
+          <input type="search" id="default-search"
+            class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg font-bold bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Search" required />
+          <button type="submit"
+            class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="container w-[70%] mx-auto"> 
+
+      <h1 class="text-[#000] text-[30px] p-[20px] font-bold">Products</h1>
+
+    <div id="products" class="grid grid-cols-2 gap-11">
+    </div>
+    </div>
+  </section>
+
+  <script type="module" src="./script/app.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="navbar bg-[#4c68ff]">
+    <div class="flex-1">
+      <a href="./index.html" class="btn btn-ghost text-xl text-white">Buy / Sells Corner</a>
+    </div>
+    <div class="flex-none">
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <div class="indicator text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img alt="Tailwind CSS Navbar component"
+              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+          </div>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li>
+            <a href="./postadd.html" class="justify-between">
+              Add Post
+              <span class="badge">New</span>
+            </a>
+          </li>
+          <li><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="bg-[#FFF6F6] rounded-[10px] ml-5 mr-5 mt-5 mb-11">
+    <div class="round-lg">
+      <form class="w-[80%] mx-auto p-[30px]">
+        <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+        <div class="relative">
+          <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+            </svg>
+          </div>
+          <input type="search" id="default-search"
+            class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg font-bold bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Search" required />
+          <button type="submit"
+            class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+        </div>
+      </form>
+    </div>
+
+    
+
+    <div class="font-sans">
+      
+      <div class="p-4 lg:max-w-7xl max-w-4xl mx-auto">
+
+        <h1 class="text-[#000] text-[30px] p-[20px] font-bold">Iphone XS</h1>
+        
+        <div
+          class="grid items-start grid-cols-1 lg:grid-cols-5 gap-12 border-[1px] border-[#A1A1A1] rounded-[5px] p-6 rounded-lg">
+          <div class="lg:col-span-2 w-full lg:sticky top-0 text-center">
+
+            <div class="px-4 py-10 rounded-sm bg-[#0f0f0f] w-[100%]">
+
+              <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./images/productdetail.png" class="w-full" />
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./images/pd2.jpg" class="w-full" />
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="./images/pd3.jpg" class="w-full" />
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="./images/pd4.webp" class="w-full" />
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-3">
+
+            <div class="flex justify-end items-center gap-3">
+
+              <svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_dd_27_21)">
+                  <path d="M16 7L12 3L8 7" stroke="black" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M12 3V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M19 13V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V13" stroke="black"
+                    stroke-width="2" stroke-linecap="round" />
+                </g>
+                <defs>
+                  <filter id="filter0_dd_27_21" x="-4" y="0" width="32" height="32" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha" />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_27_21" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha" />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                    <feBlend mode="normal" in2="effect1_dropShadow_27_21" result="effect2_dropShadow_27_21" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_27_21" result="shape" />
+                  </filter>
+                </defs>
+              </svg>
+
+
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.1389 1.25962C14.5998 1.07978 14.0328 1.00014 13.4649 1.00014C12 1.00014 10.9999 1.74037 10 2.49999C9.01763 1.75124 8 1.00014 6.55296 1.00014C5.99669 1.00014 5.41614 1.06007 4.88887 1.24083C1.53101 2.33329 0.334022 5.95695 1.35101 9.12429C1.92701 10.7429 2.8549 12.2111 4.06088 13.4181C5.87741 15.1601 7.85555 16.6798 10 18C12.1404 16.7147 14.1547 15.1553 15.9498 13.427C17.1638 12.2201 18.0908 10.7429 18.6578 9.12429C19.6577 5.95695 18.4607 2.33329 15.1389 1.25962Z"
+                  stroke="black" stroke-width="2" />
+              </svg>
+
+            </div>
+            <p class="text-gray-800 text-3xl font-bold">Rs 80,000</p>
+            <div class="grid flex flex-wrap gap-4 mt-8">
+              <h2 class="text-2xl font-extrabold text-gray-800">Acer Aspire Pro 12 | Laptop</h2>
+
+              <p class="text-gray-800 text-[16px] font-light">Iphone XS MAX 64GB PTA APPROVED</p>
+            </div>
+
+            <div class="mt-8 bg-[#4C68FF] w-[100%] p-[50px] rounded-[10px]">
+
+              <div class="grid grid-cols-2 col-span-2 mt-4">
+                <div>
+                  <span class="bg-[#000] w-[100%] rounded-[40px] p-[30px] text-white">JO</span>
+                </div>
+                <div class="ml-[-200px]">
+                  <h2 class="text-[18px] font-extrabold text-gray-800 text-white">M Ali</h2>
+                  <h2 class="flex justify-end text-white font-medium">
+                    <a href="#" class="mt-[-40px]">See Profile</a> <svg class="mt-[-35px]" fill="#ffffff" height="15px"
+                      width="15px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path id="XMLID_222_"
+                          d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z">
+                        </path>
+                      </g>
+                    </svg>
+                  </h2>
+
+                  <p class="text-gray-800 text-[16px] font-light text-white">Member since June 2024</p>
+
+                  <button class="btn btn-active bg-[#2A2E37] border-0 mt-5 text-white pr-8 pl-8 text-[16px] gap-3">
+                    <svg fill="#ffffff" class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 18">
+                      <path
+                        d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z" />
+                    </svg>
+                    Call Now
+                  </button>
+
+                  <button class="btn btn-active bg-[#D9D9D9] text-[#2A2E37] pr-9 pl-9 text-[16px] gap-5">
+                    <svg fill="#000000" height="20px" width="20px" version="1.1" id="Capa_1"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60"
+                      xml:space="preserve">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M30,1.5c-16.542,0-30,12.112-30,27c0,5.205,1.647,10.246,4.768,14.604c-0.591,6.537-2.175,11.39-4.475,13.689 c-0.304,0.304-0.38,0.769-0.188,1.153C0.276,58.289,0.625,58.5,1,58.5c0.046,0,0.093-0.003,0.14-0.01 c0.405-0.057,9.813-1.412,16.617-5.338C21.622,54.711,25.738,55.5,30,55.5c16.542,0,30-12.112,30-27S46.542,1.5,30,1.5z">
+                        </path>
+                      </g>
+                    </svg>
+                    Chat
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4 mt-[100px]">
+              <button type="button"
+                class="min-w-[200px] px-4 py-2.5 border border-blue-600 bg-[#570DF8] text-white text-sm font-semibold rounded">Add
+                to cart</button>
+
+            </div>
+
+            <div class="flex justify-end items-center gap-3 mt-[-35px]">
+
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 10.3636C19 16.0909 12 21 12 21C12 21 5 16.0909 5 10.3636C5 8.41068 5.7375 6.53771 7.05025 5.15676C8.36301 3.77581 10.1435 3 12 3C13.8565 3 15.637 3.77581 16.9497 5.15676C18.2625 6.53771 19 8.41068 19 10.3636Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h2 class="text-[#5E5E5E] text-[19px] font-bold">Fb Area Karachi</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 border-[1px] border-[#A1A1A1] rounded-[10px] p-6">
+          <h3 class="text-xl font-bold text-gray-800">Details</h3>
+          <ul class="flex justify-start mt-6 gap-[100px] text-gray-800">
+            <li class="text-sm">Is Deliverable <span class="ml-4 font-bold">NO</span></li>
+            <li class="text-sm">Brand <span class="ml-4 font-bold">Apple</span></li>
+            <li class="text-sm">Price <span class="ml-4 font-bold">80,000</span></li>
+            <li class="text-sm">Condition <span class="ml-4 font-bold">Used</span></li>
+          </ul>
+
+        </div>
+
+        <div class="mt-16 border-[1px] border-[#A1A1A1] rounded-[10px] p-6">
+
+          <h3 class="text-xl font-bold text-gray-800">Description</h3>
+
+          <p class="text-[#2A2E37] font-[400] text-light mt-5">Iphone XS MAX 64GB PTA APPROVED</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

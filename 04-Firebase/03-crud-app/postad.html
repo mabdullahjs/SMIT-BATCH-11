@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post ad</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+  <!-- navbar started -->
+  <div class="navbar bg-primary text-white">
+    
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl" href="./index.html">daisyUI</a>
+    </div>
+      <div class="dropdown dropdown-end" id="user-avatar">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img
+              alt="Tailwind CSS Navbar component"
+              id="userImage"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNa1JGLFIadWHMQ0KvIuKWYGl-cxLwGlI2WA&s" />
+          </div>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-[#000000]">
+          <li>
+            <a class="justify-between" href="./postad.html">
+              Post ad
+            </a>
+          </li>
+          <li id="logout-user"><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- navbar ended -->
+
+  <section>
+
+    <div>
+        <h1 class="text-center mt-3 mb-3 font-bold text-[30px]">Post Add</h1>
+    </div>
+
+    <div class="p-[50px] w-[50%] mx-auto">
+        
+        <form id="form">
+
+    <div class="flex items-center justify-center w-full bg-[#4C68FF]">
+    <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer">
+    <div class="flex flex-col items-center justify-center pt-5 pb-6">
+       <img src="./images/plus_icon.png">
+        <p class="mb-2 text-lg text-white dark:text-gray-400"><span class="font-semibold">Upload Product Photo</span></p>
+    </div>
+    <input id="dropzone-file" type="file" class="hidden" />
+</label>
+</div> 
+
+<div class="mt-[100px]">
+
+<input type="text" name="product_title" id="product_title" class="bg-gray-50 border border-gray-300 font-light text-[#3F9586] rounded-lg  w-full p-2.5" placeholder="Product Title" required="">
+
+<input type="text" name="product_des" id="product_des" class="bg-gray-50 border border-gray-300 font-light text-[#3F9586] rounded-lg  mt-5 w-full p-2.5" placeholder="Product Discription" required="">
+
+<input type="number" name="product_price" id="product_price" class="bg-gray-50 border border-gray-300 font-light text-[#3F9586] rounded-lg  mt-5 w-full p-2.5" placeholder="Enter Price" required="">
+
+<input type="text" name="person_name" id="person_name" class="bg-gray-50 border border-gray-300 font-light text-[#3F9586] rounded-lg  mt-5 w-full p-2.5" placeholder="Enter Your Name" required="">
+
+<input type="number" name="person_number" id="person_number" class="bg-gray-50 border border-gray-300 font-light text-[#3F9586] rounded-lg  mt-5 w-full p-2.5" placeholder="Enter Your Number" required="">
+
+<div class="text-right">
+
+<button type="submit" class="w-[20%] text-white bg-[#4C68FF] hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 mt-5" id="btn-loading">POST NOW</button>
+</div>
+
+</div>
+    </form>
+    </div>
+
+  </section>
+
+  
+
+  <script type="module" src="./script/config.js"></script>
+  <script type="module" src="./script/postad.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
