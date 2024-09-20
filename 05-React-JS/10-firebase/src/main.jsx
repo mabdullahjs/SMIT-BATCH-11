@@ -1,47 +1,51 @@
-import { createRoot } from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Login from "./pages/Login.jsx";
-import Register from "./pages/Register.jsx";
-import Profile from "./pages/nestedScreens/Profile.jsx";
-import NewsFeed from "./pages/nestedScreens/NewsFeed.jsx";
-import Userdata from "./pages/nestedScreens/Userdata.jsx";
-import Layout from "./Layout.jsx";
-import "bootstrap/dist/css/bootstrap.min.css";
-import ProtectedRoutes from "./pages/ProtectedRoutes.jsx";
+import { createRoot } from 'react-dom/client'
+import App from './App.jsx'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Layout from './Layout.jsx';
+import Login from './pages/Login.jsx';
+import Dashboard from './pages/Dashboard.jsx';
+import SingleUser from './pages/SingleUser.jsx';
+import Profile from './pages/profile.jsx';
+import Register from './pages/Register.jsx';
+import Home from './pages/Home.jsx';
+import ProtectedRoutes from './components/ProtectedRoutes.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '',
     element: <Layout />,
     children: [
       {
-        path: "",
-        element: <Profile />,
+        path: '',
+        element: <Home />
       },
       {
-        path: "newsfeed",
-        element: <ProtectedRoutes component={<NewsFeed />} />,
+        path: 'login',
+        element: <Login />
       },
       {
-        path: "userdata",
-        element: <Userdata />,
+        path: 'register',
+        element: <Register />
       },
-    ],
-  },
-  {
-    path: "login",
-    element: <Login />,
-  },
-  {
-    path: "register",
-    element: <Register />,
-  },
-]);
+      {
+        path: 'profile',
+        element: <ProtectedRoutes component={<Profile/>}/>
+      },
+      {
+        path: 'dashboard',
+        element: <ProtectedRoutes component={<Dashboard/>}/>
+      },
+      {
+        path: 'user',
+        element: <ProtectedRoutes component={<SingleUser/>}/>
+      },
+    ]
+  }
+])
 
-createRoot(document.getElementById("root")).render(
+createRoot(document.getElementById('root')).render(
   <RouterProvider router={router}>
     <App />
   </RouterProvider>
-);
+)

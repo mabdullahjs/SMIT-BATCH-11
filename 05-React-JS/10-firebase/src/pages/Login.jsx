@@ -1,48 +1,46 @@
-import { signInWithEmailAndPassword } from "firebase/auth";
-import React, { useRef } from "react";
-import { useNavigate } from "react-router-dom";
-import { auth } from "../config/firebase/firebaseconfig";
+import React, { useRef } from 'react'
+import { useForm } from "react-hook-form"
+import { loginUser } from '../config/firebase/firebasemethods'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
-  const email = useRef();
-  const password = useRef();
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm()
 
-  const navigate = useNavigate();
-  const loginUser = (event) => {
-    event.preventDefault();
+  const navigate = useNavigate()
 
-    signInWithEmailAndPassword(
-      auth,
-      email.current.value,
-      password.current.value
-    )
-      .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        console.log(user);
-        navigate("/");
+  const loginUserFromFirebase = async (data) => {
+    console.log(data)
+    try {
+      const userLogin = await loginUser({
+        email: data.email,
+        password: data.password
       })
-      .catch((error) => {
-        const errorMessage = error.message;
-        console.log(errorMessage);
-      });
-  };
+      console.log(userLogin)
+      navigate('')
+
+    } catch (error) {
+      console.error(error)
+    }
+  }
   return (
-    <>
-      <h1>Login user</h1>
-      <form onSubmit={loginUser}>
-        <input type="email" placeholder="enter your email" ref={email} />
-        <input
-          type="password"
-          placeholder="enter your password"
-          ref={password}
-        />
-        <button>login</button>
+    <div>
+      <h1>Login</h1>
+      <form onSubmit={handleSubmit(loginUserFromFirebase)}>
+        <input type="email" placeholder='enter your email' {...register("email", { required: true })} /><br />
+        {errors.email && <span className='text-danger'>This field is required</span>}
+         <br />
+        <input type="password" placeholder='enter your password' {...register("password", { required: true })} /><br />
+        {errors.password && <span className='text-danger'>This field is required</span>}
+         <br />
+        <button type='submit'>login</button>
       </form>
-    </>
-  );
-};
+    </div>
+  )
+}
 
-export default Login;
-
-
+export default Login
