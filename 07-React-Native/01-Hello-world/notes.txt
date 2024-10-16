@@ -1,0 +1,59 @@
+React Native
+
+1- Expo === nextjs
+2- CLI === react
+
+
+RN CLI
+
+pros:
+
+1- App size 5MB lesser
+2- Developement experience is better than expo xxx
+
+
+cons:
+
+1- Project setup azaab haa bhai..
+2- Android studio required haa..
+3- ios developement
+
+
+
+RN Expo:
+
+pros:
+1- project setup krna asaan ha.
+2- android studio ki zaroorat nahi ha
+3- IOS dev krskta ho.
+
+cons:
+1- app size cli sa bara ha
+
+
+
+
+
+
+
+macos 
+
+1- VMWare
+2- Hackintosh
+3- client sa access lelo
+
+
+
+
+
+
+
+
+
+
+Navigation:
+
+stack navigation
+drawer navigation
+tab navigation
+
