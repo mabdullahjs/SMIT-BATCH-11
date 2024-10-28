@@ -10,11 +10,10 @@
 - [x] GITHUB/GIT
 - [x] FIREBASE
 - [x] JS HACKATHON
-- [ ] ReactJS
-- [ ] NextJS
+- [x] ReactJS
+- [x] NextJS
+- [x] REACT NATIVE
 - [ ] nodejs expressjs
 - [ ] mongodb
 - [ ] NestJS
-- [ ] REACT NATIVE
-- [ ] NextJS
 - [ ] Final HACKATHON
