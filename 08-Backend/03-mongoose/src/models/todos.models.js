@@ -10,7 +10,7 @@ const todoSchema = new Schema(
     },
     description: {
       type: String,
-      required: true,
+      required: [true, "description is required"],
     },
   },
   {

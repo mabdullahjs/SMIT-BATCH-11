@@ -23,8 +23,52 @@ const addTodo = (req, res) => {
 };
 
 // get all todo
+const getAllTodos = async (req, res) => {
+  const todos = await Todos.find({});
+  res.status(200).json({
+    todos: todos,
+  });
+};
+
 // get single todo
+const getTodoWithId = async (req, res) => {
+  const { id } = req.params;
+
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res.status(400).json({ error: "Not valid Id" });
+  }
+
+  const todo = await Todos.findById(id);
+  if (!todo) {
+    res.status(404).json({
+      message: "no todo found!",
+    });
+    return;
+  }
+
+  res.status(200).json(todo);
+};
+
 // delete todo
+
+const deleteTodo = async (req, res) => {
+  const { id } = req.params;
+
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res.status(400).json({ error: "Not valid id" });
+  }
+
+  const todo = await Todos.findOneAndDelete({ _id: id });
+
+  if (!todo) {
+    return res.status(404).json({ error: "No Todo found" });
+  }
+  res.status(200).json({
+    message: "todo deleted successfully",
+    todo,
+  });
+};
+
 // edit todo
 
-export { addTodo };
+export { addTodo, getAllTodos, getTodoWithId, deleteTodo };
