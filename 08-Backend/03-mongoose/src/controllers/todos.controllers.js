@@ -3,7 +3,7 @@ import Todos from "../models/todos.models.js";
 
 // add todo
 
-const addTodo = (req, res) => {
+const addTodo = async (req, res) => {
   const { title, description } = req.body;
 
   if (!title || !description) {
@@ -13,12 +13,13 @@ const addTodo = (req, res) => {
     return;
   }
 
-  const todo = Todos.create({
+  const todo = await Todos.create({
     title,
     description,
   });
   res.status(201).json({
     message: "user added to database successfully",
+    todo,
   });
 };
 
@@ -70,5 +71,25 @@ const deleteTodo = async (req, res) => {
 };
 
 // edit todo
+const editTodo = async (req, res) => {
+  const { id } = req.params;
 
-export { addTodo, getAllTodos, getTodoWithId, deleteTodo };
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return res.json({ error: "Not a valid Id" });
+  }
+
+  const todo = await Todos.findOneAndUpdate(
+    { _id: id },
+    {
+      ...req.body,
+    }
+  );
+
+  if (!todo) {
+    return res.status(404).json({ error: "Todo not found!" });
+  }
+
+  res.json(todo);
+};
+
+export { addTodo, getAllTodos, getTodoWithId, deleteTodo, editTodo };
