@@ -6,6 +6,7 @@ import cors from "cors";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import connectDB from "./src/db/index.js";
+import userRoutes from "./src/routes/users.routes.js";
 
 const app = express();
 
@@ -17,11 +18,8 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-const encryptP = "$2b$10$s5q2yY18eQE10n59CPnWUO48YGpweG09ce5V/uXKgZlJzS2Cp.Jr6";
-
-const token =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hYmR1bGxhaDIwMzdAZ21haWwuY29tIiwiaWF0IjoxNzMyODU3NTM4fQ.QqjHvu41SHVI4wiCBwZDskXRLQE8LkJiNTNZBdSqOjI";
-
+// routes
+app.use("/api/v1", userRoutes);
 
 connectDB()
   .then(() => {
