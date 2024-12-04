@@ -62,6 +62,30 @@ const loginUser = async (req, res) => {
 };
 
 // logout user
-// refreshtoken
+const logoutUser = async (req, res) => {
+  res.clearCookie("refreshToken");
+  res.json({ message: "user logout successfully" });
+};
 
-export { registerUser, loginUser };
+// refreshtoken
+const refreshToken = async (req, res) => {
+  const refreshToken = req.cookies.refreshToken || req.body.refreshToken;
+  if (!refreshToken)
+    return res.status(401).json({ message: "no refresh token found!" });
+
+  const decodedToken = jwt.verify(refreshToken, process.env.REFRESH_JWT_SECRET);
+
+  const user = await User.findOne({ email: decodedToken.email });
+
+  if (!user) return res.status(404).json({ message: "invalid token" });
+
+  const generateToken = generateAccessToken(user);
+  res.json({ message: "access token generated", accesstoken: generateToken });
+
+  res.json({ decodedToken });
+};
+
+// authenticate user middleware
+
+
+export { registerUser, loginUser, logoutUser, refreshToken };
