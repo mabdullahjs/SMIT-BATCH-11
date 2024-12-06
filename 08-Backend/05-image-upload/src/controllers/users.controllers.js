@@ -1,6 +1,29 @@
 import User from "../models/users.models.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
+import { v2 as cloudinary } from "cloudinary";
+import fs from "fs";
+
+// cloudinary config
+cloudinary.config({
+  cloud_name: "",
+  api_key: "",
+  api_secret: "",
+});
+
+// upload image function
+const uploadImageToCloudinary = async (localpath) => {
+  try {
+    const uploadResult = await cloudinary.uploader.upload(localpath, {
+      resource_type: "auto",
+    });
+    fs.unlinkSync(localpath);
+    return uploadResult.url;
+  } catch (error) {
+    fs.unlinkSync(localpath);
+    return null;
+  }
+};
 
 const generateAccessToken = (user) => {
   return jwt.sign({ email: user.email }, process.env.ACCESS_JWT_SECRET, {
@@ -85,16 +108,29 @@ const refreshToken = async (req, res) => {
   res.json({ decodedToken });
 };
 
-// authenticate user middleware
-const authenticateUser = async (req, res, next) => {
-  const token = req.headers["authorization"];
-  if (!token) return res.status(404).json({ message: "no token found" });
+// upload image
+const uploadImage = async (req, res) => {
+  if (!req.file)
+    return res.status(400).json({
+      message: "no image file uploaded",
+    });
 
-  jwt.verify(token, process.env.ACCESS_JWT_SECRET, (err, user) => {
-    if (err) return res.status(403).json({ message: "invalid token" });
-    req.user = user;
-    next();
-  });
+  try {
+    const uploadResult = await uploadImageToCloudinary(req.file.path);
+
+    if (!uploadResult)
+      return res
+        .status(500)
+        .json({ message: "error occured while uploading image" });
+
+    res.json({
+      message: "image uploaded successfully",
+      url: uploadResult,
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ message: "error occured while uploading image" });
+  }
 };
 
-export { registerUser, loginUser, logoutUser, refreshToken, authenticateUser };
+export { registerUser, loginUser, logoutUser, refreshToken, uploadImage };
