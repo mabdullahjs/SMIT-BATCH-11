@@ -11,10 +11,9 @@ const addCourse = async (req, res) => {
   });
 };
 
-
 const getCourse = async (req, res) => {
-  const course = await Course.find({}).populate('enrolledStudents')
+  const course = await Course.find({}).populate("enrolledStudents");
   res.json(course);
 };
 
-export { addCourse , getCourse };
+export { addCourse, getCourse };

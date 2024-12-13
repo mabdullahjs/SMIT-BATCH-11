@@ -1,36 +1,57 @@
 https://excalidraw.com/#json=HX-gYxekIHFaMDAIUDIId,jHDwObns_8cP7xDe6Qtiog
 
-Abdullah Bin Adil
-Abdur.Rehman Rehman
-AD Aly
-Ali Zaman
-Aman Smit
-anas muzaffar
-anas saleem
-Anus Qureshi
-Anwar ul haq Noorani
-Aqib Malik
-Arbaz khan
-arham qadri
-Arif Shah
-Asadullah khan
-Asghar Ali
-Asghar Balti
-Ashar Shaikh
-Asif Malik
-Asif Memon
-Ayan Sohail
-basit yaqoob
-Bilal Warsi
-Bilal Asghar
-Bilal Hingora
-Bilal Memon
-ehtesham sheikh
-fahad ali
-Faiq Arshad
-FAIX XEE
-Faiz Rehman
-Faizan Riaz
-farman khan
-Ghazanfar
-Ghuam Must
+Typescript
+classes JS (OOPS) 
+SUPABASE
+Git and Github (push, pull, branchis, merging, rebase, collaborator, opensource, pull request) 
+
+Nest js
+Vector database (pinecone, mongodb)
+openai 
+gemini
+
+
+tailwind + shadcn
+
+
+
+
+
+
+
+
+Remaining topics (backend):
+
+relations
+pagination + nodemailer
+caching with redis
+payment gateway (stripe)
+socket io
+messaging queue
+postgres sql
+complete crud
+vercel, veyko, google cloud
+
+backend hackathon
+(backend)
+(next js) 
+
+Product: 
+
+problem
+solution
+presentation, tech stack, remix, react
+storage
+budget 
+
+Use gamma Ai for creating presentations
+
+
+
+
+
+
+
+
+
+
