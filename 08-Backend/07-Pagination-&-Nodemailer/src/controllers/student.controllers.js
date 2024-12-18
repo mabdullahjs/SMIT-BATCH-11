@@ -1,6 +1,18 @@
 import Student from "../models/students.model.js";
 import Course from "../models/course.model.js";
 import mongoose from "mongoose";
+import nodemailer from "nodemailer";
+
+// nodemailer config
+const transporter = nodemailer.createTransport({
+  host: "smtp.ethereal.email",
+  port: 587,
+  secure: false,
+  auth: {
+    user: "andrew31@ethereal.email",
+    pass: "HwSd9QbQPpN4E1dVXZ",
+  },
+});
 
 const addStudent = async (req, res) => {
   const { fullName, email, enrolledCourse } = req.body;
@@ -55,4 +67,17 @@ const getAllStudent = async (req, res) => {
   res.json({ data: students, length: students.length });
 };
 
-export { addStudent, getStudent, getAllStudent };
+const sendEmail = async (req, res) => {
+  const info = await transporter.sendMail({
+    from: '"Andrew Nikolaus 👻" <andrew31@ethereal.email>', // sender address
+    to: "mabdullah2037@gmail.com", // list of receivers
+    subject: "Congratulation! Benizar income support (SINDH BANK)✔",
+    text: "Mubarak ho appka benazir income support ma 10 lac cash or 20 tola sona nikla haa. Abhi 2000rs 03221767616 ma bhejain or inaam hasil krain", // plain text body
+    html: "<b>Hello world?</b>", // html body
+  });
+
+  console.log("Message sent: %s", info.messageId);
+  res.send("email sent");
+};
+
+export { addStudent, getStudent, getAllStudent, sendEmail };
