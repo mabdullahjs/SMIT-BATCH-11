@@ -13,7 +13,7 @@
 - [x] ReactJS
 - [x] NextJS
 - [x] REACT NATIVE
-- [ ] nodejs expressjs
-- [ ] mongodb
-- [ ] NestJS
+- [x] nodejs expressjs
+- [x] mongodb
+- [x] Postgresql
 - [ ] Final HACKATHON
