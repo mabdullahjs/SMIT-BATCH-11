@@ -16,4 +16,4 @@
 - [x] nodejs expressjs
 - [x] mongodb
 - [x] Postgresql
-- [ ] Final HACKATHON
+- [x] Final HACKATHON
